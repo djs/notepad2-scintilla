@@ -1,0 +1,4 @@
+bin/
+win32/*.obj
+win32/*.res
+win32/*.pdb
