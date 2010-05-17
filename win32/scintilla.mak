@@ -261,7 +261,7 @@ $(DIR_O)\ScintillaBaseL.obj: ..\src\ScintillaBase.cxx
 	$(CC) $(CXXFLAGS) -DSCI_LEXER -c $(NAME)$@ ..\src\ScintillaBase.cxx
 
 $(DIR_O)\ScintillaWinL.obj: ScintillaWin.cxx
-	$(CC) $(CXXFLAGS) -DSCI_LEXER -c $(NAME)$@ ScintillaWin.cxx
+	$(CC) $(CXXFLAGS) -DSTATIC_BUILD -DSCI_LEXER -c $(NAME)$@ ScintillaWin.cxx
 
 $(DIR_O)\ScintillaWinS.obj: ScintillaWin.cxx
 	$(CC) $(CXXFLAGS) -DSTATIC_BUILD -c $(NAME)$@ ScintillaWin.cxx
